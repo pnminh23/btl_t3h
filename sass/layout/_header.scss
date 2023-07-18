@@ -1,0 +1,49 @@
+.header{
+    .top-nav{
+        height: 40px;
+        padding: 0 10.4167%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .left-nav{
+            display: flex;
+            
+        }
+        .right-nav{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .main-nav{
+        padding: 0 10.4167%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                height: 40px;
+            }
+        }
+        .menu{
+            display: flex;
+            // align-items: center ;
+            li{
+                position: relative;
+                .sub-menu{
+                    position: absolute;
+                    z-index: 1;
+                }
+            }
+        }
+        .search{
+            position: relative;
+            svg{
+                position: absolute;
+                
+            
+            }
+        }
+    }
+}

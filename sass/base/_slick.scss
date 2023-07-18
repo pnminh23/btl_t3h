@@ -1,0 +1,25 @@
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    bottom: 20px !important;
+    li{
+        width: 11px !important;
+        height: 11px !important;
+        margin: 0 4px;
+        background: #D8D8D8;
+        border-radius: 50%;
+        button{
+            display: none !important;
+        }
+        
+    }
+    li.slick-active{
+            width: 30px !important;
+            height: 11px;
+            background-color: #fff;
+            border-radius: 5.5px;
+    }
+
+}

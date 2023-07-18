@@ -1,0 +1,39 @@
+.top-slider{
+    width: 99.0278%;
+    margin: auto;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    
+    .slide{
+        width: 100%;
+        
+        
+
+        .slider-imgs{
+            height: 440px;
+            margin: 0;
+            width: 100%;
+            padding: 28px 1.7980% 24.47px 1.7980%;
+            display: flex;
+            .slide-content{
+                margin: 68px 122px 71.53px 44.77px;
+                width: 849px;
+                p{
+                    line-height: 24px;
+                }
+                h4{
+                    margin: 24px 0;
+                }
+                .button{
+                    width: 170px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:24px ;
+                }
+            }
+        }
+    }
+}

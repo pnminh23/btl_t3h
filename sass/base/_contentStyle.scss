@@ -1,0 +1,207 @@
+@import 'variable';
+@import 'animation.scss';
+.content{
+    font-family: $fontmain;
+    .btn-hotline{
+        border: 1px solid $pink-80;
+        @include animate(1s,zoom,1s,alternate,infinite,ease-in-out);
+        @include keyframes(zoom){
+            to{
+                transform: scale(0.9);
+            }
+        }
+        .btn-hotline-ctn{
+            background-color: $pink-80;
+            @include animate(0.25s,vibrate,1s,alternate,infinite,linear);
+            @include keyframes(vibrate){
+                50%{
+                    transform: rotate(30deg);
+                }
+                
+                100%{
+                    transform: rotate(-30deg);
+                }
+            }
+        }
+    }
+    h2{
+        color: $pink-80;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+    .content-products{   
+        .list-buttons{
+            .active{
+                background-color: $pink-80;
+                color: #fff;
+            }
+            button{
+                cursor: pointer;
+                border: 1px solid $pink-80;
+                border-radius: 24px;
+                background-color: #fff;
+                color: $pink-80;
+                font-size: 20px;
+                font-weight: 700;   
+                transition: 0.5s;
+                &:hover{
+                    box-shadow: 0 2px 10px -2px $pink-80;
+                }
+            }
+        }
+        .list-products{
+            .flex-row{
+                .product{
+                    border: 1px solid $pink-80;
+                    border-radius: 30px;
+                    transition: 0.5s;
+                    &:hover{
+                        box-shadow: 2px 2px 10px $pink-80;
+                        transform: scale(1.1);
+                        z-index: 5;
+                        
+                       h4{
+                        color: $pink-80;
+                       }
+                    }
+
+                    .image{
+                        img{
+                            border-top-right-radius: 29px;
+                            border-top-left-radius: 29px ;
+                        }
+                    }
+                    .ctn-product{
+                        h4{
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .price{
+                            p{
+                                font-size: 20px;
+                                color:$pink-80;
+                                font-weight: 700;
+                                line-height: 29.62px;
+                            }
+                            .sale{
+                                color: $gray-50;
+                                text-decoration: line-through;
+                                font-weight: 500;
+                            }
+                        }
+                        .add-button{
+                            border: none;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 18px;
+                            background-color: $pink-80;
+                            color: #fff;
+                            border-radius: 18px;
+                            transition: 0.3s;
+                            &:hover{
+                                transform: translateY(-5px);
+                                box-shadow: 0 2px 10px -1px $pink-80;
+                            }
+                            &:active{
+                                transform: translateY(2px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .quality{
+        .logo-sw{
+            .item{
+                p{
+                    font-family: $fontmain;
+                    font-weight: 700;
+                    line-height: 32px;
+                    font-size: 24px;
+                    color: $gray-100;
+                }
+            }
+        }
+    }
+    .describe{
+        .paragraph{
+            .title{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 47px;
+                color: $pink-80;
+            }
+            .pa{
+                font-size: 16px;
+                color: $gray-100;
+                line-height: 24px;
+                
+            }
+            button{
+                display: flex;
+                height: 48px;
+                padding: 10px 28px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 24px;
+                background-color: $pink-80;
+                font-size: 20px;
+                color: #fff;
+                font-family: $fontmain;
+                font-weight: 700;
+                line-height: 24px;
+                border: none;
+                transition: 0.5s;
+                @include animate(0.2s,zoom,0s,alternate,infinite,ease-in-out)
+            }
+        }
+    }
+    .feedback{
+        h3{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            color: $pink-80;
+        }
+        i{
+            font-size: 30px;
+            color: $gray-20;
+            font-weight: bold;
+        }
+        .arrow{
+            cursor: pointer;
+            &:hover i{
+                color: $pink-80;
+            }
+        }
+        .infor{
+            border-radius: 20px;
+            border: 1px solid $pink-80;
+            
+            .line-avatar{
+                border: 2px solid $pink-80;
+            }
+            .name{
+                color: $gray-100;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 28px;
+            }
+            .sub{
+                
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: $gray-50;
+                text-align: center;
+
+                /* Body/P16 */
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+    
+}

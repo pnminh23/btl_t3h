@@ -1,0 +1,25 @@
+@import 'variable';
+.footer{
+    font-family: $fontmain;
+    .ctn-footer{
+        .item{
+            
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+            h4{
+                font-size: 20px;
+
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+            }
+            
+        }
+        
+    }
+}

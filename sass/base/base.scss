@@ -1,0 +1,13 @@
+@import 'variable';
+@import 'animation.scss';
+@import 'headerStyle';
+@import 'slideStyle';
+@import 'slick';
+@import 'contentStyle';
+@import 'footerStyle';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

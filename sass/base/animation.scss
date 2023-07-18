@@ -1,0 +1,14 @@
+@mixin animate($duration,$animation,$delay,$direction,$iteration,$timing-funciton){
+    animation: $duration $animation $delay $direction $iteration $timing-funciton;
+}
+@mixin keyframes($name){
+    @keyframes #{$name} {
+        @content;
+    }
+}
+@mixin animateSlide{
+    animation: 1s slide ;
+    @keyframes slide {
+        
+    }
+}
